@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: cut_it_like_this_production
-  username: cut_it_like_this
-  password: <%= ENV["CUT_IT_LIKE_THIS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
